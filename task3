@@ -1,0 +1,24 @@
+// Напишите программу, которая принимает на вход
+//  целое число из отрезка [10, 99] и показывает 
+//  наибольшую цифру числа.
+
+using System.ComponentModel;
+
+System.Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number > 9 && number < 100) ;
+{
+    if (number / 10 > number % 10)
+        Console.WriteLine("Первое");
+    else
+    if (number / 10 == number % 10)
+        Console.WriteLine("Одинаковые");
+    else
+    if (number / 10 < number % 10)
+        Console.WriteLine("Второе");
+    else
+    if (number < 9 && number > 100)
+        Console.WriteLine("Число не является двузначным");
+}
+Console.WriteLine();
